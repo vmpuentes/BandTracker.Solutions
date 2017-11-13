@@ -13,12 +13,14 @@ _An app that will let a user track bands and the venues where they've played con
 
 | Behavior  | Input  | Output  |
 |---|---|---|
-|1.Employee user lands on Homepage and is able to add a stylist to the database | Stylist Name | Stylist Name is appended on list |
-|2. Employee user is able to click on Stylist Name and see stylist's details | click on name of Stylist | a list of that stylist's clients is appended |
-|3. Employee user is able to add new stylists as needed to database | new stylist name is entered | new stylist name is appended. |
-|4. Employee user is able to add new clients to a specific stylist. | Add Client button is entered | Client list is appended on stylist page. |
-|5. Employee user is able to update a client's name to database. | Client name is clicked | text box appears for editing. |
-|6. Employee user is able to delete a client if needed. | delete client button is enter under client details. | client is deleted from database. |
+|1.user can click on views button for bands on homepage, a list of all the bands will be displayed. | User clicks button | Bands are displayed on bands details page.|
+|2. User may enter a new band's information and see it in the band's details page | User Enters info of favorite band | favorite band's info is appended |
+|3. User may see a list of all venues | click all venues button | all available venues are appended. |
+|4. User may enter a new venue and a form will appear to enter the venue's info | venue form is filled out. | venue info is displayed. |
+|5. User is able to add a venue to a band of their choosing. | a
+form to add bands will appear. | User's chosen band is added to venue.|
+|6. User see details of venue. | Venue is selected | Venue details are appended. |
+|7. User is able to update details of venue and add a band. | user clicks on venue, and adds a band that has performed there. | Band is displayed on venue details page. |
 
 ## Getting Started
 
@@ -30,11 +32,12 @@ May be deployed using git hub at  https://vmpuentes.github.com/HairSalon.Solutio
 3. Set up database with MAMP and create a database with these instructions...
 
 ## Database Setup
-> CREATE DATABASE hair_salon;
-> USE hair_salon;
-> CREATE TABLE stylist (id serial PRIMARY KEY, name VARCHAR(255), );
-> CREATE TABLE clients (id serial PRIMARY KEY, description VARCHAR(255), stylist_id INT);
+> CREATE DATABASE band_tracker;
+> USE band_tracker;
+> CREATE TABLE bands (id serial PRIMARY KEY, name VARCHAR(255), aka VARCHAR(255), origin VARCHAR(255), members VARCHAR(255), genres VARCHAR(255));
+> CREATE TABLE venues (id serial PRIMARY KEY, name VARCHAR(255), location VARCHAR(255));
 
+> CREATE TABLE bands_venues (id serial PRIMARY KEY, band_id INT, venue_id INT);
 
 ## Built With
 
