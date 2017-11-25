@@ -1,0 +1,3 @@
+C:\Users\swhit\Desktop\BandTracker.Solutions\BandTracker\obj\Debug\netcoreapp1.1\bandtracker.csproj.CoreCompileInputs.cache
+C:\Users\swhit\Desktop\BandTracker.Solutions\BandTracker\obj\Debug\netcoreapp1.1\bandtracker.AssemblyInfoInputs.cache
+C:\Users\swhit\Desktop\BandTracker.Solutions\BandTracker\obj\Debug\netcoreapp1.1\bandtracker.AssemblyInfo.cs
